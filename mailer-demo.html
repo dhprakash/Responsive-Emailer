@@ -1,0 +1,814 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="target-densitydpi=device-dpi">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="MobileOptimized" content="width" />
+<title>Mailer</title>
+<style type="text/css">
+/*img {
+ height: auto;
+ max-width: 100%;
+}*/
+/* Forces Hotmail to display emails at full width. */
+
+
+
+.ExternalClass {
+	width: 100%;
+}
+/* Forces Hotmail to display normal line spacing. */
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+	line-height: 100%;
+}
+/* Prevents Webkit and Windows Mobile platforms from changing default font sizes. */
+body {
+	-webkit-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	margin: 0;
+	padding: 0;
+}
+/* Resets all body margins and padding to "0" for good measure. */
+
+/* Resolves webkit padding issue. */
+table {
+	border-spacing: 0;
+}
+/* Resolves the Outlook 2007, 2010, and Gmail td padding issue. */
+table td {
+	border-collapse: collapse;
+}
+/****** END BUG FIXES ********/
+
+/****** EDITABLE STYLES - FOR YOUR TEMPLATE ********/
+body, #body_style {
+	/* width:100% !important;*/
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+body {
+*width:600px;
+	margin: 0 auto;
+	width: 600px\9;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+/* Target mobile devices. */
+ /* @media only screen and (max-device-width: 600px) { */
+@media only screen and (min-width: 600px) {
+body {
+	/*width:44.7%;*/
+	margin: 0 auto;
+	width: 600px;
+}
+/*table{
+width:600px;
+}*/
+}
+
+@media only screen and (max-width: 480px) {
+body, table {
+	width: 100%!important;
+}
+.font320 {
+	font-size: 0.7em!important;
+}
+.font3201 {
+	font-size: 0.9em!important;
+}
+.font3202 {
+	font-size: 1.1em!important;
+}
+}
+
+@media only screen and (max-width: 599px) { /* TEMPORARY */
+/* Hide elements at smaller screen sizes (!important needed to override inline CSS). */
+body[yahoo] .hide {
+	display: none !important;
+}
+/* Adjust table widths at smaller screen sizes. */
+body, table {
+	width: 100% !important;
+}
+.TD-Left {
+	width: 90% !important;
+}
+.TD-Right {
+	width: 10% !important;
+}
+/*** END EDITABLE STYLES ***/
+
+/*img {
+ display: block;
+ border: none;
+ outline: none;
+ text-decoration: none;
+ width: 100%;
+ height: 100%;
+}
+ Remove spacing around Outlook 07, 10 tables */
+table {
+	border-collapse: collapse;
+	mso-table-lspace: 0pt;
+	mso-table-rspace: 0pt;
+}
+.newfooter {
+	display: none !important
+}
+.nodivider {
+	border-left: none !important
+}
+.footer-img {
+	display: none !important
+}
+.fullWidth {
+	width: 100% !important
+}
+}
+
+/*** END TEMPORARY ***/
+</style>
+</head>
+
+<body>
+<table width="602" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#ffffff" style="border:1px solid #dcddde; background-color:#ffffff">
+  <tr>
+    <td valign="top" bgcolor="#ffffff" style="line-height:0px;background-color:#dcddde;"><img src="images/banner.jpg" alt="" width="100%" border="0"></td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#000; font-size:1rem; line-height:25px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="8%" bgcolor="#aa9de9"></td>
+          <td width="84%" valign="top" bgcolor="#aa9de9"><table width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%!important">
+              <tr>
+                <td align="left" valign="top" height="25"></td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#fff; font-size:1rem; line-height:25px;">Heart diseases are like jolts that your car engine takes, just because they don’t come to your notice doesn’t mean they’re not there. Continuous care and timely check-ups is what your heart needs.</td>
+              </tr>
+              <tr>
+                <td align="left" valign="top" height="25"></td>
+              </tr>
+            </table></td>
+          <td width="8%"  bgcolor="#aa9de9"></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#000; font-size:1rem; line-height:25px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="8%"></td>
+          <td width="84%" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%!important">
+              <tr>
+                <td align="left" valign="top" height="15"></td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#000; font-size:1.5rem; line-height:25px;"><strong>Let’s get to the heart of the matter.</strong></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top" height="15"></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%!important">
+                    <tbody>
+                      <tr>
+                        <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td width="8%"></td>
+                                <td width="84%" valign="top" bgcolor="#e6ecff" style="-webkit-box-shadow: 0px 0px 9px -2px rgba(176,175,181,1);
+-moz-box-shadow: 0px 0px 9px -2px rgba(176,175,181,1);
+box-shadow: 0px 0px 9px -2px rgba(176,175,181,1);"><table width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%!important">
+                                    <tr>
+                                      <td align="left" valign="top" height="20"></td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                          <tbody>
+                                            <tr>
+                                              <td width="5%"></td>
+                                              <td width="90%" valign="top" align="center"  style="font-family: Arial, Helvetica, sans-serif;color:#000; font-size:1rem; line-height:25px;"><strong>54.5 million</strong> cardiac related deaths in <strong>2016</strong></td>
+                                              <td width="5%"></td>
+                                            </tr>
+                                          </tbody>
+                                        </table></td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" valign="top" height="20"></td>
+                                    </tr>
+                                  </table></td>
+                                <td width="8%" ></td>
+                              </tr>
+                            </tbody>
+                          </table></td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="top" height="15"></td>
+                      </tr>
+                      <tr>
+                        <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td width="8%"></td>
+                                <td width="84%" valign="top" bgcolor="#e6ecff" style="-webkit-box-shadow: 0px 0px 9px -2px rgba(176,175,181,1);
+-moz-box-shadow: 0px 0px 9px -2px rgba(176,175,181,1);
+box-shadow: 0px 0px 9px -2px rgba(176,175,181,1);"><table width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%!important">
+                                    <tr>
+                                      <td align="left" valign="top" height="15"></td>
+                                    </tr>
+                                    <tr>
+                                      <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#000; font-size:1rem; line-height:25px;">&nbsp;Major factors that affect Indians-&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" valign="top" height="15"></td>
+                                    </tr>
+                                    <tr>
+                                      <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                          <tbody>
+                                            <tr>
+                                              <td width="5%"></td>
+                                              <td width="90%" valign="top"><table align="center" style="width:100% !important;" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                  <tr>
+                                                    <td valign="top" align="left"><!--[if (gte mso 9)|(IE)]>
+        <table width="100%" align="center">
+   		<tr>
+     
+        <td width="40%" valign="top">
+        <![endif]-->
+                                                      
+                                                      <div align="center" style="width:100%; width:180px; display:inline-block; vertical-align:top;">
+                                                        <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%!important;">
+                                                          <tr>
+                                                            <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                <tbody>
+                                                                  <tr>
+                                                                    <td align="left" valign="middle" width="15" style="font-size:20px;">&bull;</td>
+                                                                    <td align="left" valign="middle" style="font-family: Arial, Helvetica, sans-serif;color:#000; font-size:14px; line-height:25px;  padding:0;">Hypertension (56.6%)</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <td align="left" valign="top" width="15" style="font-size:20px;">&bull;</td>
+                                                                    <td align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#000; font-size:14px; line-height:25px;">High cholesterol (29.4%)</td>
+                                                                  </tr>
+                                                                </tbody>
+                                                              </table></td>
+                                                          </tr>
+                                                        </table>
+                                                      </div>
+                                                      
+                                                      <!--[if (gte mso 9)|(IE)]>
+        </td><td width="40%" valign="top">
+        <![endif]-->
+                                                      
+                                                      <div align="center" style="width:100%; width:180px; display:inline-block; vertical-align:top;">
+                                                        <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%!important;">
+                                                          <tr>
+                                                            <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                <tbody>
+                                                                  <tr>
+                                                                    <td align="left" valign="middle" width="15" style="font-size:20px;">&bull;</td>
+                                                                    <td align="left" valign="middle" style="font-family: Arial, Helvetica, sans-serif;color:#000; font-size:14px; line-height:25px;  padding:0;">Bad food habits (54.4%)</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                    <td align="left" valign="top" width="15" style="font-size:20px;">&bull;</td>
+                                                                    <td align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#000; font-size:14px; line-height:25px;">Tobacco usage (18.9%)</td>
+                                                                  </tr>
+                                                                </tbody>
+                                                              </table></td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td height="20"></td>
+                                                          </tr>
+                                                        </table>
+                                                      </div>
+                                                      
+                                                      <!--[if (gte mso 9)|(IE)]>
+        </td>
+      
+        </tr>
+        </table>
+        <![endif]--></td>
+                                                  </tr>
+                                                </table></td>
+                                              <td width="5%"></td>
+                                            </tr>
+                                          </tbody>
+                                        </table></td>
+                                    </tr>
+                                  </table></td>
+                                <td width="8%" ></td>
+                              </tr>
+                            </tbody>
+                          </table></td>
+                      </tr>
+                    </tbody>
+                  </table></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top" height="20"></td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#000; font-size:1.5rem; line-height:25px;"><strong>How to catch the symptoms early?</strong></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top" height="15"></td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#000; font-size:1rem; line-height:25px;">Heart attack symptoms are ignored because of their common nature and hence, it’s all the more important to know them.</td>
+              </tr>
+            </table></td>
+          <td width="8%" ></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#000; font-size:1rem; line-height:25px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="left" valign="top" height="25"></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#000; font-size:1rem; line-height:25px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="top" bgcolor="#ffffff" style="line-height:0px;"><img src="images/heatbeat-img.jpg" alt="" width="100%" border="0"></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#000; font-size:1rem; line-height:25px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="8%" bgcolor="#aa9de9"></td>
+          <td width="84%" valign="top" bgcolor="#aa9de9"><table width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%!important">
+              <tr>
+                <td align="left" valign="top" height="15"></td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#fff; font-size:1.5rem; line-height:25px;"><strong>Things you need to do<br/>
+                  in case of a heart attack.</strong></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top" height="15"></td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#fff; font-size:1rem; line-height:25px;">The effects do eventually catch up on the causes. If you are suffering from a heart attack or someone close-by is, here’s what to do.</td>
+              </tr>
+              <tr>
+                <td valign="top" align="center" style="text-align:center;"><table align="center" style="width:100% !important;" width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top" align="center"><!--[if (gte mso 9)|(IE)]>
+        <table width="100%" align="center">
+   		<tr>
+     
+        <td width="30%" valign="top">
+        <![endif]-->
+                        
+                        <div align="center" style="width:100%; width:150px; display:inline-block; vertical-align:top;">
+                          <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%!important;">
+                            <tr>
+                              <td height="10"></td>
+                            </tr>
+                            <tr>
+                              <td style="line-height:0px; vertical-align:middle !important" align="center" valign="middle" ><img src="images/img1.jpg" alt="" border="0"></td>
+                            </tr>
+                            <tr>
+                              <td height="10"></td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#fff; font-size:1rem; line-height:22px;">Call 112 for emergency medical help</td>
+                            </tr>
+                            <tr>
+                              <td height="10"></td>
+                            </tr>
+                          </table>
+                        </div>
+                        
+                        <!--[if (gte mso 9)|(IE)]>
+        </td><td width="30%" valign="top">
+        <![endif]-->
+                        
+                        <div align="center" style="width:100%; width:150px; display:inline-block; vertical-align:top;">
+                          <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%!important;">
+                            <tr>
+                              <td height="10"></td>
+                            </tr>
+                            <tr>
+                              <td style="line-height:0px; vertical-align:middle !important" align="center" valign="middle" ><img src="images/img2.jpg" alt="" border="0"></td>
+                            </tr>
+                            <tr>
+                              <td height="10"></td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#fff; font-size:1rem; line-height:22px;">Do not apply pressure on the chest</td>
+                            </tr>
+                            <tr>
+                              <td height="10"></td>
+                            </tr>
+                          </table>
+                        </div>
+                        
+                        <!--[if (gte mso 9)|(IE)]>
+        </td><td width="30%" valign="top">
+        <![endif]-->
+                        
+                        <div align="center" style="width:100%; width:150px; display:inline-block; vertical-align:top;">
+                          <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%!important;">
+                            <tr>
+                              <td height="10"></td>
+                            </tr>
+                            <tr>
+                              <td style="line-height:0px; vertical-align:middle !important" align="center" valign="middle" ><img src="images/img3.jpg" alt="" border="0"></td>
+                            </tr>
+                            <tr>
+                              <td height="10"></td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#fff; font-size:1rem; line-height:22px;">Do CPR 
+                                if someone has 
+                                fallen unconscious</td>
+                            </tr>
+                            <tr>
+                              <td height="10"></td>
+                            </tr>
+                          </table>
+                        </div>
+                        
+                        <!--[if (gte mso 9)|(IE)]>
+        </td>
+      
+        </tr>
+        </table>
+        <![endif]--></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top" height="25"></td>
+              </tr>
+            </table></td>
+          <td width="8%"  bgcolor="#aa9de9"></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#000; font-size:1rem; line-height:25px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="center" valign="top" style="vertical-align: top;!important; line-height:0px"><img src="images/bottom-img.jpg" width="100%" border="0" alt="" style="display:block" /></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#000; font-size:1rem; line-height:25px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="8%"></td>
+          <td width="84%" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%!important">
+              <tr>
+                <td align="left" valign="top" height="15"></td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#000; font-size:1.5rem; line-height:25px;"><strong>But there’s no need to lose heart,<br/>
+                  this can be prevented.</strong></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top" height="15"></td>
+              </tr>
+              <tr>
+                <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#000; font-size:1rem; line-height:25px;">With proper care, heart ailments can be kept at bay.</td>
+              </tr>
+              <tr>
+                <td valign="top" align="center" style="text-align:center;"><table align="center" style="width:100% !important;" width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top" align="center"><!--[if (gte mso 9)|(IE)]>
+        <table width="100%" align="center">
+   		<tr>
+     
+        <td width="30%" valign="top">
+        <![endif]-->
+                        
+                        <div align="center" style="width:100%; width:150px; display:inline-block; vertical-align:top;">
+                          <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%!important;">
+                            <tr>
+                              <td height="10"></td>
+                            </tr>
+                            <tr>
+                              <td style="line-height:0px; vertical-align:middle !important" align="center" valign="middle" ><img src="images/pic1.jpg" alt="" border="0"></td>
+                            </tr>
+                            <tr>
+                              <td height="10"></td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#000; font-size:1rem; line-height:22px;"> Eat a healthy diet</td>
+                            </tr>
+                            <tr>
+                              <td height="10"></td>
+                            </tr>
+                          </table>
+                        </div>
+                        
+                        <!--[if (gte mso 9)|(IE)]>
+        </td><td width="30%" valign="top">
+        <![endif]-->
+                        
+                        <div align="center" style="width:100%; width:150px; display:inline-block; vertical-align:top;">
+                          <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%!important;">
+                            <tr>
+                              <td height="10"></td>
+                            </tr>
+                            <tr>
+                              <td style="line-height:0px; vertical-align:middle !important" align="center" valign="middle" ><img src="images/pic2.jpg" alt="" border="0"></td>
+                            </tr>
+                            <tr>
+                              <td height="10"></td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#000; font-size:1rem; line-height:22px;">Control your blood pressure </td>
+                            </tr>
+                            <tr>
+                              <td height="10"></td>
+                            </tr>
+                          </table>
+                        </div>
+                        
+                        <!--[if (gte mso 9)|(IE)]>
+        </td><td width="30%" valign="top">
+        <![endif]-->
+                        
+                        <div align="center" style="width:100%; width:150px; display:inline-block; vertical-align:top;">
+                          <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%!important;">
+                            <tr>
+                              <td height="10"></td>
+                            </tr>
+                            <tr>
+                              <td style="line-height:0px; vertical-align:middle !important" align="center" valign="middle" ><img src="images/pic3.jpg" alt="" border="0"></td>
+                            </tr>
+                            <tr>
+                              <td height="10"></td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#000; font-size:1rem; line-height:22px;">Quit smoking</td>
+                            </tr>
+                            <tr>
+                              <td height="10"></td>
+                            </tr>
+                          </table>
+                        </div>
+                        
+                        <!--[if (gte mso 9)|(IE)]>
+        </td>
+      
+        </tr>
+        </table>
+        <![endif]--></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td valign="top" align="center" style="text-align:center;"><table align="center" style="width:100% !important;" width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top" align="center"><!--[if (gte mso 9)|(IE)]>
+        <table width="100%" align="center">
+   		<tr>
+     
+        <td width="50%" valign="top">
+        <![endif]-->
+                        
+                        <div align="center" style="width:100%; width:200px; display:inline-block; vertical-align:top;">
+                          <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%!important;">
+                            <tr>
+                              <td height="10"></td>
+                            </tr>
+                            <tr>
+                              <td style="line-height:0px; vertical-align:middle !important" align="center" valign="middle" ><img src="images/pic4.jpg" alt="" border="0"></td>
+                            </tr>
+                            <tr>
+                              <td height="10"></td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#000; font-size:1rem; line-height:22px;"> Eat a healthy diet</td>
+                            </tr>
+                            <tr>
+                              <td height="10"></td>
+                            </tr>
+                          </table>
+                        </div>
+                        
+                        <!--[if (gte mso 9)|(IE)]>
+        </td><td width="50%" valign="top">
+        <![endif]-->
+                        
+                        <div align="center" style="width:100%; width:200px; display:inline-block; vertical-align:top;">
+                          <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%!important;">
+                            <tr>
+                              <td height="10"></td>
+                            </tr>
+                            <tr>
+                              <td style="line-height:0px; vertical-align:middle !important" align="center" valign="middle" ><img src="images/pic5.jpg" alt="" border="0"></td>
+                            </tr>
+                            <tr>
+                              <td height="10"></td>
+                            </tr>
+                            <tr>
+                              <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#000; font-size:1rem; line-height:22px;">Control your blood pressure </td>
+                            </tr>
+                            <tr>
+                              <td height="10"></td>
+                            </tr>
+                          </table>
+                        </div>
+                        
+                        <!--[if (gte mso 9)|(IE)]>
+        </td>
+      
+        </tr>
+        </table>
+        <![endif]--></td>
+                    </tr>
+                  </table></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top" height="25"></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top"><img src="images/keep-your.jpg" width="100%" border="0" alt=""/></td>
+              </tr>
+              <tr>
+                <td align="left" valign="top" height="25"></td>
+              </tr>
+            </table></td>
+          <td width="8%"></td>
+        </tr>
+      </table></td>
+  </tr>
+  <tr>
+    <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+          <tr>
+            <td width="8%" bgcolor="#0a846d"></td>
+            <td width="84%" valign="top" bgcolor="#0a846d"><table width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%!important">
+                <tr>
+                  <td align="center" valign="top" height="25" style="font-family: Arial, Helvetica, sans-serif;color:#fff; font-size:0.625rem; padding:0; margin:0; line-height:normal">&nbsp;</td>
+                </tr>
+                <tr>
+                  <td align="left" valign="top"><table align="center" style="width:100% !important;" width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td valign="top" align="center"><!--[if (gte mso 9)|(IE)]>
+        <table width="100%" align="center">
+   		<tr>
+     
+        <td width="30%" valign="top">
+        <![endif]-->
+                          
+                          <div align="center" style="width:100%; width:110px; display:inline-block; vertical-align:top;">
+                            <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%!important;">
+                              <tr>
+                                <td height="10"></td>
+                              </tr>
+                              <tr>
+                                <td style="line-height:0px; vertical-align:middle !important" align="center" valign="middle" ><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                      <tr>
+                                        <td align="left" valign="top" width="15" style="font-size:20px;"><img src="images/phone.jpg" border="0" alt=""/></td>
+                                        <td align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#fff; font-size:14px;  padding:0;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tbody>
+                                              <tr>
+                                                <td align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#fff; font-size:0.625rem;padding:0; margin:0; line-height:normal; border-right:#a7cb46 solid 2px;"><a href="tel:+919992999929" style="font-family: Arial, Helvetica, sans-serif;color:#fff; font-size:0.625rem; padding:0; margin:0; line-height:normal; text-decoration:none">7506100300</a></td>
+                                              </tr>
+                                              <tr>
+                                                <td align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#fff; font-size:0.625rem;padding:0; margin:0; line-height:normal; border-right:#a7cb46 solid 2px;">to place your order</td>
+                                              </tr>
+                                            </tbody>
+                                          </table></td>
+                                      </tr>
+                                    </tbody>
+                                  </table></td>
+                              </tr>
+                              <tr>
+                                <td height="10"></td>
+                              </tr>
+                              <tr>
+                                <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#000; font-size:1rem; line-height:22px;"></td>
+                              </tr>
+                              <tr>
+                                <td height="10"></td>
+                              </tr>
+                            </table>
+                          </div>
+                          
+                          <!--[if (gte mso 9)|(IE)]>
+        </td><td width="30%" valign="top">
+        <![endif]-->
+                          
+                          <div align="center" style="width:100%; width:110px; display:inline-block; vertical-align:top;">
+                            <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%!important;">
+                              <tr>
+                                <td height="10"></td>
+                              </tr>
+                              <tr>
+                                <td style="line-height:0px; vertical-align:middle !important" align="center" valign="middle" ><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                      <tr>
+                                        <td align="left" valign="top"  style="font-family: Arial, Helvetica, sans-serif;color:#fff; font-size:0.625rem; padding:0; margin:0; line-height:normal">Download<br/>
+                                          the app</td>
+                                        <td align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#fff; font-size:0.625rem; padding:0; margin:0; line-height:normal; border-right:#a7cb46 solid 2px;"><a href="https://play.google.com/store/apps/details?id=com.phonegap.rxpal&referrer=af_tranid%3D48gd7PXOmEH9Asljk2vtKg%26pid%3DWeb%26c%3DTop" target="blank"><img src="images/social.jpg" border="0" alt=""/></a> <a href="https://itunes.apple.com/IN/app/id982432643?mt=8" target="blank"> <img src="images/social1.jpg" border="0" width="20" height="19" alt=""/></a></td>
+                                      </tr>
+                                    </tbody>
+                                  </table></td>
+                              </tr>
+                              <tr>
+                                <td height="10"></td>
+                              </tr>
+                              <tr>
+                                <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#000; font-size:1rem; line-height:22px;"></td>
+                              </tr>
+                              <tr>
+                                <td height="10"></td>
+                              </tr>
+                            </table>
+                          </div>
+                          
+                          <!--[if (gte mso 9)|(IE)]>
+        </td><td width="30%" valign="top">
+        <![endif]-->
+                          
+                          <div align="center" style="width:100%; width:110px; display:inline-block; vertical-align:top;">
+                            <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%!important;">
+                              <tr>
+                                <td height="10"></td>
+                              </tr>
+                              <tr>
+                                <td style="line-height:0px; vertical-align:middle !important" align="center" valign="middle" ><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                      <tr>
+                                        <td align="center" valign="middle" style="font-size:20px; border-right:#a7cb46 solid 2px;"><a href="https://www.instagram.com/pharmeasyapp/" target="blank"><img src="images/social2.jpg" border="0" alt=""/></a> <a href="https://twitter.com/pharmeasyapp/" target="blank"><img src="images/social3.jpg"  border="0"alt=""/></a> <a href="https://www.facebook.com/pharmeasy/" target="blank"><img src="images/social4.jpg" border="0" alt=""/></a> <a href="https://www.youtube.com/channel/UCDats_DLX-bGZH3-KGu8JhA" target="blank"><img src="images/social5.jpg" border="0" alt=""/></a></td>
+                                      </tr>
+                                    </tbody>
+                                  </table></td>
+                              </tr>
+                              <tr>
+                                <td height="10"></td>
+                              </tr>
+                              <tr>
+                                <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#000; font-size:1rem; line-height:22px;"></td>
+                              </tr>
+                              <tr>
+                                <td height="10"></td>
+                              </tr>
+                            </table>
+                          </div>
+                          
+                          <!--[if (gte mso 9)|(IE)]>
+        </td><td width="30%" valign="top">
+        <![endif]-->
+                          
+                          <div align="center" style="width:100%; width:110px; display:inline-block; vertical-align:top;">
+                            <table align="center" width="100%" border="0" cellspacing="0" cellpadding="0" style="width:100%!important;">
+                              <tr>
+                                <td height="10"></td>
+                              </tr>
+                              <tr>
+                                <td style="line-height:0px; vertical-align:middle !important" align="center" valign="middle" ><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tbody>
+                                      <tr>
+                                        <td align="left" valign="middle" style="font-family: Arial, Helvetica, sans-serif;color:#fff; font-size:0.625rem; padding:0; margin:0; line-height:normal"><a href="http://panela.pharmeasy.online/jtrack?d=1&id=e0gICAgJAlUHVRgJAAICBQQPC0QTVw8BD1hLR1lSQVlXUhFKFw0MCV9XUho=UwgKCAsFTwJSDAoCQ1wmVF8DC1kdV1dV&client=53896&test=1&c=0000" target="blank" style="font-family: Arial, Helvetica, sans-serif;color:#fff; font-size:0.625rem; padding:0; margin:0; line-height:normal; text-decoration:underline">UNSUBSCRIBE</a></td>
+                                      </tr>
+                                    </tbody>
+                                  </table></td>
+                              </tr>
+                              <tr>
+                                <td height="10"></td>
+                              </tr>
+                              <tr>
+                                <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif;color:#000; font-size:1rem; line-height:22px;"></td>
+                              </tr>
+                              <tr>
+                                <td height="10"></td>
+                              </tr>
+                            </table>
+                          </div>
+                          
+                          <!--[if (gte mso 9)|(IE)]>
+        </td>
+      
+        </tr>
+        </table>
+        <![endif]--></td>
+                      </tr>
+                    </table></td>
+                <tr>
+                  <td align="center" valign="top" height="25" style="font-family: Arial, Helvetica, sans-serif;color:#fff; font-size:0.625rem; padding:0; margin:0; line-height:normal">*T&C diagnostic services are available in select cities.</td>
+                </tr>
+              </table></td>
+            <td width="8%"  bgcolor="#0a846d"></td>
+          </tr>
+        </tbody>
+      </table></td>
+  </tr>
+</table>
+</body>
+</html>
